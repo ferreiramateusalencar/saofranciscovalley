@@ -1,6 +1,18 @@
 <!doctype html>
 <html lang="pt-BR">
     <head>
+        <base id="site-base" href="/" />
+        <script>
+            (function () {
+                var repoBase = '/saofranciscovalley/';
+                var baseEl = document.getElementById('site-base');
+                if (location.hostname.indexOf('github.io') !== -1 || location.pathname.indexOf(repoBase) === 0) {
+                    baseEl.setAttribute('href', repoBase);
+                } else {
+                    baseEl.setAttribute('href', '/');
+                }
+            })();
+        </script>
         <link rel="stylesheet" href="src/css/styles.css" />
 
         <meta charset="UTF-8">
@@ -22,12 +34,12 @@
         <meta property="og:description" content="A São Francisco Valley é uma comunidade de startups e empreendedorismo do Vale do São Francisco. Conectamos talento regional a oportunidades globais."/>
         <meta property="og:url" content="https://saofranciscovalley.com.br/"/>
         <meta property="og:site_name" content="São Francisco Valley"/>
-        <meta property="og:image" content="/saofranciscovalley/src/assets/images/logo.png"/>
+        <meta property="og:image" content="src/assets/images/logo.png"/>
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:title" content="São Francisco Valley - Comunidade de Startups do Vale do São Francisco"/>
         <meta name="twitter:description" content="A São Francisco Valley é uma comunidade de startups e empreendedorismo do Vale do São Francisco. Conectamos talento regional a oportunidades globais."/>
-        <meta name="twitter:image" content="/saofranciscovalley/src/assets/images/logo.png"/>
+        <meta name="twitter:image" content="src/assets/images/logo.png"/>
     </head>
     <body>
         <div id="header"></div>
@@ -48,7 +60,7 @@
                         <button class="btn primary" id="joinBtn">
                             Quero Participar <span class="arrow">→</span>
                         </button>
-                        <a class="btn secondary" href="/saofranciscovalley/src/pages/catalogo.html">Ver Startups</a>
+                        <a class="btn secondary" href="src/pages/catalogo.html">Ver Startups</a>
                     </div>
                     <div class="avatars">
                         <div class="avatar-stack">

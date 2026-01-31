@@ -4,7 +4,19 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>Catálogo — São Francisco Valley</title>
-        <link rel="stylesheet" href="../css/styles.css" />
+        <base id="site-base" href="/" />
+        <script>
+            (function () {
+                var repoBase = '/saofranciscovalley/';
+                var baseEl = document.getElementById('site-base');
+                if (location.hostname.indexOf('github.io') !== -1 || location.pathname.indexOf(repoBase) === 0) {
+                    baseEl.setAttribute('href', repoBase);
+                } else {
+                    baseEl.setAttribute('href', '/');
+                }
+            })();
+        </script>
+        <link rel="stylesheet" href="src/css/styles.css" />
     </head>
     <body>
         <div id="header"></div>
@@ -13,15 +25,15 @@
 
         <div id="footer"></div>
 
-        <script src="../../data/startups.js"></script>
+        <script src="data/startups.js"></script>
         <script>
             ;(async function () {
-                const header = await (await fetch('../components/header.html')).text()
+                const header = await (await fetch('src/components/header.html')).text()
                 document.getElementById('header').innerHTML = header
-                const footer = await (await fetch('../components/footer.html')).text()
+                const footer = await (await fetch('src/components/footer.html')).text()
                 document.getElementById('footer').innerHTML = footer
                 const s = document.createElement('script')
-                s.src = '../js/main.js'
+                s.src = 'src/js/main.js'
                 s.onload = function () {
                     if (typeof renderCatalog === 'function') {
                         renderCatalog()
