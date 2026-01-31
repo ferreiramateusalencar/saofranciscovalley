@@ -1,5 +1,7 @@
 # Static version (organizado)
 
+[![CI](https://github.com/ferreiramateusalencar/saofranciscovalley/actions/workflows/ci.yml/badge.svg)](https://github.com/ferreiramateusalencar/saofranciscovalley/actions/workflows/ci.yml)
+
 Esta pasta contém uma versão em HTML/CSS/JS puro do projeto React original, agora organizada como um pequeno projeto estático.
 
 Estrutura criada:
@@ -19,7 +21,7 @@ Como usar:
 Próximos passos sugeridos:
 
 - Substituir emojis por SVGs em `assets/icons/` (melhor aparência). ✅
-- Remover arquivos antigos (`styles.css`, `script.js`) ou arquivá-los se preferir.
+- Remover/arquivar arquivos antigos — `styles.css` foi consolidado em `css/styles.css`. Verifique `script.js` antes de remover.
 - Melhorar acessibilidade e adicionar testes simples.
 
 Se quer, eu faço uma limpeza final (remover arquivos antigos) e adiciono ícones SVG e um pequeno `serve` script para desenvolvimento.

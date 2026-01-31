@@ -1,109 +1,180 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>São Francisco Valley - Static</title>
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="#/" class="logo-link" aria-label="São Francisco Valley">
-        <div class="logo-svg" role="img" aria-hidden="false">
-          <svg viewBox="0 0 100 80" class="logo-image" fill="none" xmlns="http://www.w3.org/2000/svg" width="60" height="48">
-            <circle cx="50" cy="45" r="18" fill="#FFB800" />
-            <path d="M50 20V10M72 32L80 25M78 55L88 58M22 55L12 58M28 32L20 25M50 20L50 10" stroke="#FFB800" stroke-width="2" stroke-linecap="round"/>
-            <rect x="35" y="40" width="4" height="20" fill="#003366" />
-            <rect x="61" y="40" width="4" height="20" fill="#003366" />
-            <path d="M35 45L65 45M35 50L65 50" stroke="#003366" stroke-width="1" />
-            <rect x="15" y="55" width="70" height="3" fill="#003366" />
-            <path d="M15 58H85V60H15V58Z" fill="#003366" />
-            <path d="M10 65C30 60 40 75 60 70C80 65 90 75 90 75" stroke="#00AEEF" stroke-width="3" stroke-linecap="round" />
-            <path d="M15 72C35 67 45 82 65 77C85 72 95 82 95 82" stroke="#00AEEF" stroke-width="2" opacity="0.6" stroke-linecap="round" />
-          </svg>
-        </div>
-        <div class="logo-text">
-          <span class="logo-line">SÃO</span>
-          <span class="logo-line">FRANCISCO</span>
-          <span class="logo-line gold">VALLEY</span>
-        </div>
-      </a>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>São Francisco Valley - Static</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div id="header"></div>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">☰</button>
+        <main id="app" class="app">
+            <section class="hero fade-in">
+                <div class="hero-left">
+                    <div class="badge">
+                        <span class="pulse"></span>
+                        Impulsionando o Futuro do Vale
+                    </div>
+                    <h1>Onde a Inovação Encontra o <span class="text-navy">Sertão</span>.</h1>
+                    <p>
+                        Somos o principal hub de startups e empreendedorismo do Vale do São
+                        Francisco. Conectamos talento regional a oportunidades globais.
+                    </p>
+                    <div class="buttons">
+                        <button class="btn primary" id="joinBtn">
+                            Quero Participar <span class="arrow">→</span>
+                        </button>
+                        <a class="btn secondary" href="catalogo.html">Ver Startups</a>
+                    </div>
+                    <div class="avatars">
+                        <div class="avatar-stack">
+                            <img
+                                src="https://picsum.photos/seed/11/100/100"
+                                alt="m"
+                                class="avatar"
+                            />
+                            <img
+                                src="https://picsum.photos/seed/12/100/100"
+                                alt="m"
+                                class="avatar"
+                            />
+                            <img
+                                src="https://picsum.photos/seed/13/100/100"
+                                alt="m"
+                                class="avatar"
+                            />
+                        </div>
+                        <div class="stat-small">
+                            <strong class="stat-strong">+50 Startups</strong> já fazem parte
+                        </div>
+                    </div>
+                </div>
 
-      <div class="nav-links" id="navLinks">
-        <a href="index.html">Início</a>
-        <a href="index.html#sobre">Sobre</a>
-        <a href="index.html#solucoes">Soluções</a>
-        <a href="catalogo.html">Startups</a>
-        <a href="index.html#contato">Contato</a>
-        <a class="cta" href="index.html#comunidade">Fazer Parte</a>
-      </div>
-    </div>
-  </nav>
+                <div class="hero-image">
+                    <div class="decor-blob blob-1"></div>
+                    <div class="decor-blob blob-2"></div>
+                    <div class="hero-image-inner">
+                        <img src="assets/images/peoples.jpeg" alt="Inovação" />
+                        <div class="hero-overlay"></div>
+                        <div class="hero-caption">
+                            <p class="hero-caption-text">
+                                "A infraestrutura social que o ecossistema do Vale precisava para
+                                crescer."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <main id="app" class="app"></main>
+            <section id="sobre" class="section light fade-in">
+                <div class="container">
+                    <div class="section-intro">
+                        <h2 class="kicker">O Desafio</h2>
+                        <h3 class="section-subtitle">Unindo o ecossistema fragmentado</h3>
+                        <p class="muted-text">
+                            O Vale do São Francisco possui potencial intelectual gigante, mas
+                            enfrentava desafios estruturais como a falta de capacitação e escassez
+                            de ambientes colaborativos.
+                        </p>
+                    </div>
+                    <div class="features">
+                        <div class="feature-card">
+                            <div class="feature-icon">💬</div>
+                            <h3>Hub Comunitário</h3>
+                            <p>
+                                Um ponto centralizado para mentoria, eventos e suporte prático a
+                                empreendedores em fase inicial.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📈</div>
+                            <h3>Desenvolvimento Regional</h3>
+                            <p>
+                                Fortalecemos a retenção de talentos e o aproveitamento do potencial
+                                inovador do interior.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🌱</div>
+                            <h3>Impacto Sustentável</h3>
+                            <p>
+                                Soluções alinhadas às vocações do Vale, gerando trabalho, renda e
+                                inovação resiliente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <footer id="contato" class="footer">
-    <div class="footer-inner">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="logo-footer" aria-hidden="false">
-            <svg viewBox="0 0 100 80" class="logo-image" fill="none" xmlns="http://www.w3.org/2000/svg" width="72" height="56">
-              <circle cx="50" cy="45" r="18" fill="#FFB800" />
-              <path d="M35 40V60M61 40V60M15 55H85" stroke="#fff" stroke-width="2" stroke-linecap="round" />
-              <path d="M10 65C30 60 40 75 60 70C80 65 90 75 90 75" stroke="#00AEEF" stroke-width="3" stroke-linecap="round" />
-            </svg>
-          </div>
-          <div class="footer-brand-text">
-            <div class="brand-lines"><span>SÃO</span><span>FRANCISCO</span><span class="gold">VALLEY</span></div>
-            <p class="footer-desc">Transformando o Vale do São Francisco em um hub global de inovação sustentável. Conectando as margens do rio ao futuro da tecnologia.</p>
-          </div>
-          <div class="footer-social">
-            <a href="https://www.instagram.com/saofranciscovalley/" target="_blank" class="social-btn" aria-label="Instagram">📷</a>
-            <a href="https://www.linkedin.com/company/comunidade-s%C3%A3o-francisco-valley/" target="_blank" class="social-btn" aria-label="LinkedIn">🔗</a>
-          </div>
-        </div>
+            <section id="solucoes" class="section alt fade-in">
+                <div class="container two-column">
+                    <div>
+                        <h2 class="big-title">
+                            Mais que uma comunidade, <br />uma infraestrutura social.
+                        </h2>
+                        <p class="muted-text">
+                            Articulamos parcerias, oferecemos capacitação e conexão com mercado para
+                            ampliar o impacto do ecossistema.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="join-highlighter">Join the Valley!</div>
+                        <h3 class="card-title">Pronto para inovar conosco?</h3>
+                        <form class="join-form" id="joinForm">
+                            <label class="form-label">Nome Completo</label>
+                            <input required name="name" class="form-input" />
+                            <label class="form-label">Seu E-mail</label>
+                            <input type="email" required name="email" class="form-input" />
+                            <label class="form-label">Área de Interesse</label>
+                            <select name="area" class="form-select">
+                                <option>Startup (Fundador)</option>
+                                <option>Investidor / Mentor</option>
+                                <option>Academia / Pesquisador</option>
+                                <option>Parceiro Institucional</option>
+                            </select>
+                            <button class="btn primary full-width" type="submit">
+                                Cadastrar na Comunidade
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
 
-        <div class="footer-links">
-          <h4>Ecossistema</h4>
-          <ul>
-            <li><a href="catalogo.html">Startups do Vale</a></li>
-            <li><a href="#">Programa de Mentoria</a></li>
-            <li><a href="#">Calendário de Eventos</a></li>
-            <li><a href="#">Trilhas de Aprendizado</a></li>
-          </ul>
-        </div>
+            <section class="section light fade-in">
+                <div class="container text-center">
+                    <h2 class="section-title-large">Alinhados com o Futuro</h2>
+                    <div class="stats-row">
+                        <div class="stat-card">
+                            <div class="stat-box stat-blue">4</div>
+                            <p class="stat-title">Educação de Qualidade</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-box stat-red">8</div>
+                            <p class="stat-title">Trabalho Decente e Crescimento</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-box stat-orange">9</div>
+                            <p class="stat-title">Indústria, Inovação e Infra</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-        <div class="footer-contact">
-          <h4>Conecte-se</h4>
-          <ul class="contact-list">
-            <li>
-              <span class="contact-icon">✉️</span>
-              <div>
-                <p class="contact-title">E-mail</p>
-                <p class="contact-sub">saofranciscovalley@gmail.com</p>
-              </div>
-            </li>
-            <li>
-              <span class="contact-icon">📍</span>
-              <div>
-                <p class="contact-title">Localização</p>
-                <p class="contact-sub">Polo Petrolina-Juazeiro<br/>Brasil</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+        <div id="footer"></div>
 
-      <div class="footer-bottom">
-        <p class="copyright">© 2026 SÃO FRANCISCO VALLEY. TODOS OS DIREITOS RESERVADOS. <br/>COMUNIDADE DE STARTUP E EMPREENDEDORISMO.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="data/startups.js"></script>
-  <script src="js/main.js"></script>
-</body>
+        <script src="data/startups.js"></script>
+        <script>
+            ;(async function () {
+                const header = await (await fetch('componentes/header.html')).text()
+                document.getElementById('header').innerHTML = header
+                const footer = await (await fetch('componentes/footer.html')).text()
+                document.getElementById('footer').innerHTML = footer
+                const s = document.createElement('script')
+                s.src = 'js/main.js'
+                document.body.appendChild(s)
+            })()
+        </script>
+    </body>
 </html>
