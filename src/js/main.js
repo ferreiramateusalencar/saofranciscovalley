@@ -1,6 +1,5 @@
 // main.js — lógica central do site (usa `window.STARTUPS` definido em data/startups.js)
-const CATEGORIES = ['All', 'Agro', 'Health', 'Tech', 'Education', 'Creative Economy', 'Impact']
-
+const CATEGORIES = ['All', 'Agritech', 'Automotivo', 'Empresa Jr', 'Healthtech', 'Sustentabilidade']
 const app = document.getElementById('app')
 const navToggle = document.getElementById('navToggle')
 const navLinksEl = document.getElementById('navLinks')
