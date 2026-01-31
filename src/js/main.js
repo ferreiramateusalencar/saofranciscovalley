@@ -82,7 +82,7 @@ function renderCatalog() {
       <div class="center-container">
         <h2>Sua startup também é do Vale?</h2>
         <p>Junte-se a dezenas de empreendedores e ganhe visibilidade, conexões e suporte.</p>
-        <button class="btn primary">Cadastrar Minha Startup</button>
+        <a href="https://forms.gle/Xq84XEqnNbk1UeqX6" target="_blank" rel="noopener noreferrer"><button class="btn primary">Cadastrar Minha Startup</button></a>
       </div>
     </section>
   `
