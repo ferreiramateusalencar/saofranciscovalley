@@ -13,8 +13,6 @@
         <link rel="icon" href="src/assets/icons/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="src/assets/icons/favicon.ico" type="image/x-icon" />
 
-        <link rel="stylesheet" href="src/css/style.css"/>
-
         <title>São Francisco Valley</title>
 
         <link rel="canonical" href="https://saofranciscovalley.com.br/"/>
@@ -24,12 +22,12 @@
         <meta property="og:description" content="A São Francisco Valley é uma comunidade de startups e empreendedorismo do Vale do São Francisco. Conectamos talento regional a oportunidades globais."/>
         <meta property="og:url" content="https://saofranciscovalley.com.br/"/>
         <meta property="og:site_name" content="São Francisco Valley"/>
-        <meta property="og:image" content="src/assets/images/logo.png"/>
+        <meta property="og:image" content="/src/assets/images/logo.png"/>
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:title" content="São Francisco Valley - Comunidade de Startups do Vale do São Francisco"/>
         <meta name="twitter:description" content="A São Francisco Valley é uma comunidade de startups e empreendedorismo do Vale do São Francisco. Conectamos talento regional a oportunidades globais."/>
-        <meta name="twitter:image" content="src/assets/images/logo.png"/>
+        <meta name="twitter:image" content="/src/assets/images/logo.png"/>
     </head>
     <body>
         <div id="header"></div>
@@ -50,7 +48,7 @@
                         <button class="btn primary" id="joinBtn">
                             Quero Participar <span class="arrow">→</span>
                         </button>
-                        <a class="btn secondary" href="src/pages/catalogo.html">Ver Startups</a>
+                        <a class="btn secondary" href="/src/pages/catalogo.html">Ver Startups</a>
                     </div>
                     <div class="avatars">
                         <div class="avatar-stack">
@@ -197,7 +195,7 @@
                 const footer = await (await fetch('src/components/footer.html')).text()
                 document.getElementById('footer').innerHTML = footer
                 const s = document.createElement('script')
-                s.src = 'js/main.js'
+                s.src = 'src/js/main.js'
                 document.body.appendChild(s)
             })()
         </script>

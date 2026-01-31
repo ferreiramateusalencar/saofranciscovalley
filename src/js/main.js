@@ -138,7 +138,7 @@ function renderCatalog() {
           <h4>${s.name}</h4>
           <p>${s.description}</p>
         </div>
-        <div class="startup-actions"><a href="${s.website}">Conhecer Startup</a></div>
+        <div class="startup-actions"><a href="${s.website || '#'}" target="_blank" rel="noopener noreferrer">Conhecer Startup</a></div>
       `
             listEl.appendChild(card)
         })
