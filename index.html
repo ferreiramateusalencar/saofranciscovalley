@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
     <head>
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="src/css/styles.css" />
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +10,12 @@
         <meta name="keywords" content="startups, empreendedorismo, Vale do São Francisco, tecnologia, inovação, negócios">
         <meta name="description" content="A São Francisco Valley é uma comunidade de startups e empreendedorismo do Vale do São Francisco. Conectamos talento regional a oportunidades globais.">
 
-        <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="src/assets/icons/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="src/assets/icons/favicon.ico" type="image/x-icon" />
 
         <link rel="stylesheet" href="src/css/style.css"/>
 
-        <title>São Francisco Valley - Static</title>
+        <title>São Francisco Valley</title>
 
         <link rel="canonical" href="https://saofranciscovalley.com.br/"/>
         <meta property="og:locale" content="pt_BR"/>
@@ -24,12 +24,12 @@
         <meta property="og:description" content="A São Francisco Valley é uma comunidade de startups e empreendedorismo do Vale do São Francisco. Conectamos talento regional a oportunidades globais."/>
         <meta property="og:url" content="https://saofranciscovalley.com.br/"/>
         <meta property="og:site_name" content="São Francisco Valley"/>
-        <meta property="og:image" content="assets/images/logo.png"/>
+        <meta property="og:image" content="src/assets/images/logo.png"/>
 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:title" content="São Francisco Valley - Comunidade de Startups do Vale do São Francisco"/>
         <meta name="twitter:description" content="A São Francisco Valley é uma comunidade de startups e empreendedorismo do Vale do São Francisco. Conectamos talento regional a oportunidades globais."/>
-        <meta name="twitter:image" content="assets/images/logo.png"/>
+        <meta name="twitter:image" content="src/assets/images/logo.png"/>
     </head>
     <body>
         <div id="header"></div>
@@ -50,7 +50,7 @@
                         <button class="btn primary" id="joinBtn">
                             Quero Participar <span class="arrow">→</span>
                         </button>
-                        <a class="btn secondary" href="catalogo.html">Ver Startups</a>
+                        <a class="btn secondary" href="src/pages/catalogo.html">Ver Startups</a>
                     </div>
                     <div class="avatars">
                         <div class="avatar-stack">
@@ -80,7 +80,7 @@
                     <div class="decor-blob blob-1"></div>
                     <div class="decor-blob blob-2"></div>
                     <div class="hero-image-inner">
-                        <img src="assets/images/peoples.jpeg" alt="Inovação" />
+                        <img src="src/assets/images/peoples.jpeg" alt="Inovação" />
                         <div class="hero-overlay"></div>
                         <div class="hero-caption">
                             <p class="hero-caption-text">
@@ -192,9 +192,9 @@
         <script src="data/startups.js"></script>
         <script>
             ;(async function () {
-                const header = await (await fetch('componentes/header.html')).text()
+                const header = await (await fetch('src/components/header.html')).text()
                 document.getElementById('header').innerHTML = header
-                const footer = await (await fetch('componentes/footer.html')).text()
+                const footer = await (await fetch('src/components/footer.html')).text()
                 document.getElementById('footer').innerHTML = footer
                 const s = document.createElement('script')
                 s.src = 'js/main.js'
