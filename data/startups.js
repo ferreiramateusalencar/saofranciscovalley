@@ -74,7 +74,7 @@ window.STARTUPS = [
     {
         id: '10',
         name: 'EBS Valorização de Resíduos',
-        category: 'Healthtech',
+        category: 'Agritech',
         description: '',
         logo: 'src/assets/images/startups/EBS.jpg',
         website: '',
