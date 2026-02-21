@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Catálogo — São Francisco Valley</title>
+        <base id="site-base" href="/" />
+        <script>
+            (function () {
+                var repoBase = '/saofranciscovalley/';
+                var baseEl = document.getElementById('site-base');
+                if (location.hostname.indexOf('github.io') !== -1 || location.pathname.indexOf(repoBase) === 0) {
+                    baseEl.setAttribute('href', repoBase);
+                } else {
+                    baseEl.setAttribute('href', '/');
+                }
+            })();
+        </script>
+        <link rel="stylesheet" href="src/css/styles.css" />
+    </head>
+    <body>
+        <div id="header"></div>
+
+        <main id="app" class="app"></main>
+            <iframe src="https://calendar.google.com/calendar/embed?src=inovapnz%40gmail.com&ctz=America%2FRecife" style={{ border: 0 }} width="100%" height="600" frameBorder="0" scrolling="no"></iframe>
+
+        <div id="footer"></div>
+
+        <script>
+            ;(async function () {
+                const header = await (await fetch('src/components/header.html')).text()
+                document.getElementById('header').innerHTML = header
+                const footer = await (await fetch('src/components/footer.html')).text()
+                document.getElementById('footer').innerHTML = footer
+            })()
+        </script>
+    </body>
+</html>
