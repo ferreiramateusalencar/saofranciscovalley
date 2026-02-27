@@ -20,7 +20,7 @@ window.STARTUPS = [
         name: 'Atropical',
         category: 'Agritech',
         description: 'https://youtu.be/6pymVsdg0H8?si=BPDw_eju59X29LgY',
-        logo: 'src/assets/images/peoples.jpeg',
+        logo: 'src/assets/images/startups/atropical.jpg',
         website: 'https://www.instagram.com/atropical.gd/',
     },
     {
