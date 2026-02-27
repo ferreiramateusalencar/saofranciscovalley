@@ -201,6 +201,37 @@
 
         <script src="data/startups.js"></script>
         <script>
+            document.addEventListener("DOMContentLoaded", function () {
+
+                if (!window.STARTUPS) return;
+                const avatarStack = document.querySelector(".avatar-stack");
+                if (!avatarStack) return;
+
+                const startupsComLogo = window.STARTUPS.filter(s =>
+                    s.logo &&
+                    !s.logo.includes("peoples.jpeg")
+                );
+
+                if (startupsComLogo.length === 0) return;
+
+                function getRandomItems(arr, count) {
+                    const shuffled = [...arr].sort(() => 0.5 - Math.random());
+                    return shuffled.slice(0, count);
+                }
+
+                const selecionadas = getRandomItems(startupsComLogo, 3);
+                avatarStack.innerHTML = selecionadas.map(startup => `
+                    <img
+                        src="${startup.logo}"
+                        alt="${startup.name}"
+                        class="avatar"
+                        title="${startup.name}"
+                    />
+                `).join("");
+
+            });
+        </script>
+        <script>
             ;(async function () {
                 const header = await (await fetch('src/components/header.html')).text()
                 document.getElementById('header').innerHTML = header

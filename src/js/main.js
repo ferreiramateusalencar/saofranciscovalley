@@ -147,3 +147,5 @@ function renderCatalog() {
 
 window.addEventListener('hashchange', route)
 window.addEventListener('load', route)
+
+
